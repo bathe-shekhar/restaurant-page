@@ -1,7 +1,7 @@
 import data from '../src/assets/data.json';
-import Strawberry from '../src/assets/strawberry.jpeg';
-import Pineapple from '../src/assets/pineapple.jpeg';
-import Kiwi from '../src/assets/kiwi.jpeg';
+import Strawberry from './assets/strawberry.jpeg';
+import Pineapple from './assets/pineapple.jpeg';
+import Kiwi from './assets/kiwi.jpeg';
 
 function showMenuContent() {
 
@@ -40,15 +40,15 @@ function showMenuContent() {
 
         if (count == 1) {
             menuDescription.className = "menu-item-description strawberry";
-            menuImg.src = strawberryImage;
+            menuItemImage.appendChild(strawberryImage);
         }
         if (count == 2) {
             menuDescription.className = "menu-item-description pineapple";
-            menuImg.src = pineappleImage;
+            menuItemImage.appendChild(pineappleImage);
         }
         if (count == 3) {
             menuDescription.className = "menu-item-description kiwi";
-            menuImg.src = kiwiImage;
+            menuItemImage.appendChild(kiwiImage);
         }
         const menuItemTitle = document.createElement('div');
         menuItemTitle.className = "menu-title";
@@ -69,7 +69,7 @@ function showMenuContent() {
         menuDescription.appendChild(menuItemTitle);
         menuDescription.appendChild(menuItemBenefits);
 
-        menuItemImage.appendChild(menuImg);
+
 
         menuItem.appendChild(menuItemImage);
         menuItem.appendChild(menuDescription);
