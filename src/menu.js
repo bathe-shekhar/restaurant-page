@@ -1,42 +1,10 @@
 import data from '../src/assets/data.json';
+import Strawberry from '../src/assets/strawberry.jpeg';
+import Pineapple from '../src/assets/pineapple.jpeg';
+import Kiwi from '../src/assets/kiwi.jpeg';
 
 function showMenuContent() {
 
-    // <div class="menu">
-    //     <div class="menu-item">
-    //         <div class="menu-item-img item1">
-    //             <img src="../src/assets/strawberry.jpeg">
-    //         </div>
-    //         <div class="menu-item-description strawberry">
-    //             <ul>
-    //                 <li>1</li>
-    //                 <li>1</li>
-    //             </ul>
-    //         </div>
-    //     </div>
-    //     <div class="menu-item">
-    //         <div class="menu-item-img item2">
-    //             <img src="../src/assets/pineapple.jpeg">
-    //         </div>
-    //         <div class="menu-item-description pineapple">
-    //             <ul>
-    //                 <li>1</li>
-    //                 <li>1</li>
-    //             </ul>
-    //         </div>
-    //     </div>
-    //     <div class="menu-item">
-    //         <div class="menu-item-img item3">
-    //             <img src="../src/assets/kiwi.jpeg">
-    //         </div>
-    //         <div class="menu-item-description kiwi">
-    //             <ul>
-    //                 <li>1</li>
-    //                 <li>1</li>
-    //             </ul>
-    //         </div>
-    //     </div>
-    // </div>
 
     console.log("data: ", data);
 
@@ -44,6 +12,14 @@ function showMenuContent() {
     const menu = document.createElement('div');
     menu.className = 'menu';
 
+    const strawberryImage = new Image();
+    strawberryImage.src = Strawberry;
+
+    const pineappleImage = new Image();
+    pineappleImage.src = Pineapple;
+
+    const kiwiImage = new Image();
+    kiwiImage.src = Kiwi;
 
     data.items.forEach(item => {
         console.log("title: ", item.title);
@@ -58,17 +34,22 @@ function showMenuContent() {
         menuItemImage.classList = classlist;
 
         const menuImg = new Image();
-        menuImg.src = item.image;
+        // menuImg.src = item.image;
 
         const menuDescription = document.createElement('div');
 
-        if (count == 1)
+        if (count == 1) {
             menuDescription.className = "menu-item-description strawberry";
-        if (count == 2)
+            menuImg.src = strawberryImage;
+        }
+        if (count == 2) {
             menuDescription.className = "menu-item-description pineapple";
-        if (count == 3)
+            menuImg.src = pineappleImage;
+        }
+        if (count == 3) {
             menuDescription.className = "menu-item-description kiwi";
-
+            menuImg.src = kiwiImage;
+        }
         const menuItemTitle = document.createElement('div');
         menuItemTitle.className = "menu-title";
         menuItemTitle.innerHTML = item.title;
