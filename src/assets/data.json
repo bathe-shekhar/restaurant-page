@@ -1,0 +1,20 @@
+{
+    "items" :
+        [{
+            "title":"Strawberry Smoothie",
+            "image":"../src/assets/strawberry.jpeg",
+            "description":"Low Calorie,Cholesterol Champion,Hydration Boost,Diabetic Delights,Good for the Gut,“C” is for Vitamin C,Eye Spy,Fewer Wrinkles in Time."
+        },
+        {
+            "title":"Pineapple Smoothie",
+            "image":"../src/assets/pineapple.jpeg",
+            "description":"Highly nutritious,Contains antioxidants,Aid digestion,Reduce your risk of cancer,Boost immunity, Suppress inflammation,Ease symptoms of arthritis,Speed recovery after surgery, Easy to add to your diet"
+        },
+        {
+            "title":"Kiwi Smoothie",
+            "image":"../src/assets/kiwi.jpeg",
+            "description":"Fired Digestion, Glowing Skin, Happier Heart, Immunity Pump, Clearer Vision, Smoother Respiration, Boosted Metabolism, Peaceful Sleep"
+        }
+    ]
+    
+}

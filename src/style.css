@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'DancingScriptBold';
+    src: url('./assets/DancingScript-Bold.ttf') format('ttf');
+    font-weight: 700;
+
+}
+
+:root {
+    --tiffany_blue: #A0E7E5;
+    --hot_pink: #FFAEBC;
+    --mint: #B4F8C8;
+    --yellow: #FBE7C6;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    padding: 20px;
+    background-color: var(--hot_pink);
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerbar {
+    background: var(--tiffany_blue);
+    padding: 20px 0px;
+    text-align: center;
+    font-family: 'DancingScriptBold';
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    font-style: italic;
+}
+
+.nav-btn {
+    background-color: rgb(128, 0, 0, 0.5);
+    /* opacity: 0.25; */
+    padding: 15px 25px;
+    /* color: var(--tiffany_blue); */
+    color: white;
+    border: 2px solid rgb(128, 0, 0, 0.2);
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+#content {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    background-color: rgb(160, 231, 229, 0.5);
+}
+
+.banner {
+    height: 100%;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    /* background-image: url('../src/assets/banner.jpg'); */
+    object-fit: cover;
+    /* background-repeat: repeat; */
+}
+
+.home-content {
+    background-color: var(--tiffany_blue);
+    color: white;
+    font-family: 'DancingScriptBold';
+    /* font-weight: 900; */
+    font-size: 48px;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    align-content: center;
+    opacity: 0.9;
+    border-radius: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 20%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.strawberry {
+    background-color: var(--hot_pink);
+    color: maroon;
+}
+
+.pineapple {
+    background-color: var(--yellow);
+    color: darkgoldenrod;
+}
+
+.kiwi {
+    background-color: var(--mint);
+    color: darkgreen
+}
+
+.menu-item-img img {
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
+    /* border: 0px solid; */
+    /* z-index: 2; */
+    border-radius: 150px;
+    box-shadow: 5px 5px 3px 3px lightgray;
+}
+
+.item1 img {
+    border: 30px solid var(--hot_pink);
+}
+
+.item2 img {
+    border: 30px solid var(--yellow);
+}
+
+.item3 img {
+    border: 30px solid var(--mint);
+}
+
+.menu-item-description {
+    width: 100%;
+    /* min-height: 50%; */
+    margin-top: -30px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 3px 3px lightgray;
+    /* color: white; */
+    padding: 30px 20px;
+}
+
+.menu-title {
+    font-family: 'DancingScriptBold';
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.menu-item-benefits {
+    font-size: 24px;
+    /* font-weight: 700; */
+    text-align: left;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.about-title {
+    font-family: 'DancingScriptBold';
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    /* text-decoration: underline;   */
+    color: white;
+}
+
+.about-description {
+    /* width: 100%; */
+    display: flex;
+    padding: 40px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+.about-section {
+    background-color: var(--tiffany_blue);
+    height: 100%;
+}
+
+.about-info {
+    width: 45%;
+    margin-left: 75px;
+    font-family: 'DancingScriptBold';
+    font-size: 30px;
+    font-weight: normal;
+    text-align: left;
+    /* padding: 20px; */
+    font-style: italic;
+    /* text-decoration: underline;   */
+    color: white;
+}
+
+h1 {
+    color: var(--tiffany_blue);
+
+}
